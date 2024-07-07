@@ -1,6 +1,5 @@
 function Footer() {
 
-
   return (
     <footer className="footer bg-base-100 items-center p-4 font-poppins flex justify-center items-center">
       <aside className="">
