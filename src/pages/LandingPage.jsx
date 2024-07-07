@@ -7,7 +7,9 @@ import {VscVscode} from "react-icons/vsc";
 import {SiIntellijidea} from "react-icons/si";
 import {SiLeetcode} from "react-icons/si";
 
+
 function LandingPage() {
+
   const socialMedia = [
     {
       id: 1,
@@ -175,7 +177,7 @@ function LandingPage() {
       },
     },
     {
-      icon:(<FaGithub size={30} color={"#fff"}/>),
+      icon: (<FaGithub size={30} color={"#fff"}/>),
       title: "Github",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       link: {
@@ -187,7 +189,6 @@ function LandingPage() {
 
   return (
     <div>
-
       {/* Hero start */}
       <div className="hero min-h-screen" id={"profile"}>
         <div className="hero-content pb-56 flex-col lg:flex-row">
@@ -309,6 +310,7 @@ function LandingPage() {
             </li>
           ))}
         </ul>
+
       </div>
       {/* Experience End */}
 
@@ -320,7 +322,7 @@ function LandingPage() {
               Let’s connect
             </h3>
             <p className="mt-3">
-              We’re here to help and answer any question you might have, We look forward to hearing from you .
+              We&apos;re here to help and answer any questions you might have. Looking forward to hearing from you!.
             </p>
           </div>
           <div>
