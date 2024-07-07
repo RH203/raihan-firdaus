@@ -7,8 +7,13 @@ import {VscVscode} from "react-icons/vsc";
 import {SiIntellijidea} from "react-icons/si";
 import {SiLeetcode} from "react-icons/si";
 
+import {ScrollToTop} from "../components/index.js";
+import {scrollToSection} from "../utils/utils.js";
+
+
 
 function LandingPage() {
+
 
   const socialMedia = [
     {
@@ -215,14 +220,14 @@ function LandingPage() {
               mollit anim id est laborum.
             </p>
             <div className={"flex gap-x-5"}>
-              <a className="btn btn-primary" href={"#about"}>About me</a>
+              <div className="btn btn-primary" href={"#about"} onClick={() => scrollToSection('about')}>About me</div>
 
               <nav className="grid grid-cols-5 gap-4 md:place-self-center md:justify-self-end">
                 {socialMedia.map((data) => (
                   <Link
                     to={data.link}
                     key={data.id}
-                    className={"btn"}
+                    className={"btn "}
                   >
                     {data.icon}
                   </Link>
@@ -315,7 +320,7 @@ function LandingPage() {
       {/* Experience End */}
 
       {/*Contact start*/}
-      <section className="py-14">
+      <section className="py-14" id={"contact"}>
         <div className="max-w-screen-xl mx-auto px-4 gap-12 md:px-8 lg:flex">
           <div className="max-w-md">
             <h3 className=" text-3xl font-semibold sm:text-4xl">
@@ -358,6 +363,8 @@ function LandingPage() {
         </div>
       </section>
       {/*Contact end*/}
+
+      <ScrollToTop/>
     </div>
   );
 }
