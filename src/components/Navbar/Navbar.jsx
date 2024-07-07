@@ -7,6 +7,7 @@ function Navbar() {
   const toggle = () => setRotated(!rotated)
 
   return (
+    
     <div className="navbar bg-base-100 font-poppins">
       <div className="flex-1">
         <a className="btn btn-ghost text-xl" href={"profile"}>Raihan Firdaus</a>
