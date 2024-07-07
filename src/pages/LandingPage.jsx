@@ -1,10 +1,10 @@
 import TypeIt from "typeit-react";
 import {Link} from "react-router-dom";
+
 import {PiInstagramLogoFill, PiLinkedinLogoFill, PiWhatsappLogoBold} from "react-icons/pi";
 import {FaGithub} from "react-icons/fa";
 import {VscVscode} from "react-icons/vsc";
 import {SiIntellijidea} from "react-icons/si";
-
 import {SiLeetcode} from "react-icons/si";
 
 function LandingPage() {
@@ -187,6 +187,7 @@ function LandingPage() {
 
   return (
     <div>
+
       {/* Hero start */}
       <div className="hero min-h-screen" id={"profile"}>
         <div className="hero-content pb-56 flex-col lg:flex-row">
