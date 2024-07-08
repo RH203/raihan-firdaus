@@ -1,3 +1,4 @@
-import LandingPage from "./LandingPage.jsx";
+import LandingPage from "./LandingPage/LandingPage.jsx";
+import BlogPage from "./BlogPage/BlogPage.jsx";
 
-export {LandingPage};
+export {LandingPage, BlogPage};

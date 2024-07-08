@@ -3,4 +3,6 @@ import Footer from "./Footer/Footer.jsx";
 
 import ScrollToTop from "./ScrollToTop/ScrollToTop.jsx";
 
-export { Navbar, Footer, ScrollToTop }
+import ErrorPage from "./ErrorPage/ErrorPage.jsx";
+
+export { Navbar, Footer, ScrollToTop, ErrorPage }

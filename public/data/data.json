@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "title": "Hello 👋",
+    "cover": "",
+    "paragraphs": [
+      "I am starting a new blog",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ],
+    "images": []
+  },
+  {
+    "id": 2,
+    "title": "Blockchain Revolution",
+    "paragraphs": [
+      "An in-depth analysis of how blockchain technology is transforming industries and creating new opportunities.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ],
+    "images": []
+  }
+]
