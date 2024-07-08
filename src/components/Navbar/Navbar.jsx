@@ -1,33 +1,31 @@
 import {RiMenu3Line} from "react-icons/ri";
 import {useState} from "react";
 import {scrollToSection} from "../../utils/utils.js";
+import {Link} from "react-router-dom";
 
 function Navbar() {
   const [rotated, setRotated] = useState(false);
 
   const toggle = () => setRotated(!rotated)
 
+
   return (
     <div className="navbar bg-base-100 font-poppins">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl" href={"profile"}>Raihan Firdaus</a>
+        <Link className="btn btn-ghost text-xl" to={""} onClick={() => scrollToSection("profile")} >Raihan Firdaus</Link>
       </div>
       <div className="flex-none lg:block md:block sm:hidden">
         <ul className="menu menu-horizontal px-1 space-x-4">
+
           <li>
-            <div onClick={() => scrollToSection('skill')}>
-              Skill
-            </div>
+            <Link to={"about-me"}>
+              About me
+            </Link>
           </li>
           <li>
-            <div onClick={() => scrollToSection('experience')}>
-              Experience
-            </div>
-          </li>
-          <li>
-            <div onClick={() => scrollToSection('contact')}>
-              Contact me
-            </div>
+            <Link to={""}>
+              Blog
+            </Link>
           </li>
 
         </ul>
@@ -39,21 +37,18 @@ function Navbar() {
           }`}/>
         </div>
         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow ">
+
           <li>
-            <div onClick={() => scrollToSection('skill')}>
-              Skill
-            </div>
+            <Link to={"about-me"}>
+              About me
+            </Link>
           </li>
           <li>
-            <div onClick={() => scrollToSection('experience')}>
-              Experience
-            </div>
+            <Link to={""}>
+              Blog
+            </Link>
           </li>
-          <li>
-            <div onClick={() => scrollToSection('contact')}>
-              Contact me
-            </div>
-          </li>
+
 
         </ul>
       </div>
