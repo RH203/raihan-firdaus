@@ -1,6 +1,7 @@
 import {createBrowserRouter} from "react-router-dom";
 import App from "../pages/_layout/_app.jsx";
-import {LandingPage} from "../pages/index.js";
+import {BlogPage, LandingPage} from "../pages/index.js";
+import {ErrorPage} from "../components/index.js";
 
 
 export const router = createBrowserRouter([
@@ -9,9 +10,21 @@ export const router = createBrowserRouter([
     element: <App/>,
     children: [
       {
-        path: "",
+        path: "/",
+        element: <BlogPage/>
+      },
+      {
+        path: "about-me",
         element: <LandingPage/>
-      }
+      },
+      {
+        path: "*",
+        element: <ErrorPage/>
+      },
     ]
-  }
+  },
+  {
+    path: "*",
+    element: <ErrorPage/>
+  },
 ]);
