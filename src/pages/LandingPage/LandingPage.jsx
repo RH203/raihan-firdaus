@@ -178,7 +178,7 @@ function LandingPage() {
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       link: {
         name: "Send me DMs",
-        href: "javascript:void(0)"
+        href: ""
       },
     },
     {
@@ -187,7 +187,7 @@ function LandingPage() {
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       link: {
         name: "Follow me",
-        href: "javascript:void(0)"
+        href: ""
       },
     },
   ]
@@ -220,7 +220,7 @@ function LandingPage() {
               mollit anim id est laborum.
             </p>
             <div className={"flex gap-x-5"}>
-              <div className="btn btn-primary" href={"#about"} onClick={() => scrollToSection('about')}>About me</div>
+              <Link className="btn btn-primary" to={"blog"}>Check my blog</Link>
 
               <nav className="grid grid-cols-5 gap-4 md:place-self-center md:justify-self-end">
                 {socialMedia.map((data) => (
@@ -246,15 +246,15 @@ function LandingPage() {
           <p className={"px-5 py-3 text-4xl bg-base-200 rounded-xl "}>About me</p>
         </div>
 
-        <div className={"flex gap-x-3 mt-10"}>
+        <div className={"flex lg:flex-row md:flex-col sm:flex-col gap-x-3 mt-10"}>
 
           <div className={"flex-1"}>
-            <img src="/logo/killua.jpeg" alt="Image not found" className={"rounded-md"}/>
+            <img src="/logo/killua.jpeg" alt="Image not found" className={"lg:w-3/4 md:w-1/2 sm:w-1/2 md:mx-auto sm:mx-auto rounded-md"}/>
           </div>
 
           <div className={"flex-1 gap-y-3"}>
 
-            <div className={"flex justify-center mx-auto"}>
+            <div className={"flex justify-center mx-auto lg:mt-0 md:mt-10 sm:mt-10"}>
               <p className={"p-3 text-2xl  "}>Curious about me?</p>
             </div>
 
@@ -281,7 +281,7 @@ function LandingPage() {
         </div>
 
         <div className={"mx-auto w-4/5"}>
-          <div className={"grid grid-cols-7 mt-5 gap-3"}>
+          <div className={"grid grid-cols-7 place-items-center mt-5 gap-5"}>
             {skill.map((data) => (
               <div key={data.id}>
                 {data.icon}
