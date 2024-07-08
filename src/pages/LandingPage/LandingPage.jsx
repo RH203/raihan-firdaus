@@ -7,8 +7,7 @@ import {VscVscode} from "react-icons/vsc";
 import {SiIntellijidea} from "react-icons/si";
 import {SiLeetcode} from "react-icons/si";
 
-import {ScrollToTop} from "../components/index.js";
-import {scrollToSection} from "../utils/utils.js";
+import {ScrollToTop} from "../../components/index.js";
 
 
 
@@ -220,7 +219,7 @@ function LandingPage() {
               mollit anim id est laborum.
             </p>
             <div className={"flex gap-x-5"}>
-              <Link className="btn btn-primary" to={"blog"}>Check my blog</Link>
+              <Link className="btn btn-primary" to={"/"}>Check my blog</Link>
 
               <nav className="grid grid-cols-5 gap-4 md:place-self-center md:justify-self-end">
                 {socialMedia.map((data) => (
@@ -273,15 +272,15 @@ function LandingPage() {
       {/* About me End */}
 
       {/* Skills  Start */}
-      <div id={"skill"} className={"my-44 "}>
+      <div id={"skill"} className={"min-h-screen p-10"}>
 
-        <div className={"flex flex-col justify-center items-center mx-auto"}>
-          <p className={"px-5 py-3 text-4xl bg-base-200 rounded-xl "}>Skill</p>
+        <div className={"flex flex-col justify-center items-center mx-auto "}>
+          <p className={"text-4xl rounded-xl "}>Skill</p>
           <p className={"textarea-sm "}>The skills, tools, and technologies I am really good at:</p>
         </div>
 
-        <div className={"mx-auto w-4/5"}>
-          <div className={"grid grid-cols-7 place-items-center mt-5 gap-5"}>
+        <div className={"mt-48"}>
+          <div className={"grid lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-3 place-items-center mt-5 gap-5"}>
             {skill.map((data) => (
               <div key={data.id}>
                 {data.icon}
@@ -320,7 +319,7 @@ function LandingPage() {
       {/* Experience End */}
 
       {/*Contact start*/}
-      <section className="py-14" id={"contact"}>
+      <section className="py-14 " id={"contact"}>
         <div className="max-w-screen-xl mx-auto px-4 gap-12 md:px-8 lg:flex">
           <div className="max-w-md">
             <h3 className=" text-3xl font-semibold sm:text-4xl">
